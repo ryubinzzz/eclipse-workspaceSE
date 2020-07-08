@@ -28,6 +28,7 @@ public class BookLibraryMain {
 		 * 
 		 * 책객체참조변수를 회원의 멤버변수에대입
 		 */
+		Book[] books = {book1, book2};
 		
 		
 		/*

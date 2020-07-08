@@ -18,6 +18,16 @@ public class Student {
 	 *  - 인자 0개짜리 생성자(기본생성자선언) 
 	 *  - 인자 5개짜리(번호 이름 국어 영어 수학) 생성자선언
 	 */
+	public Student() {
+		
+	}
+	public Student(int no, String name, int kor, int eng, int math) {
+		this.name = name;
+		this.no = no;
+		this.kor =kor;
+		this.eng = eng;
+		this.math =math;
+	}
 	
 	/*
 	 * <<멤버메쏘드선언 >>
@@ -87,6 +97,42 @@ public class Student {
 	}
 	public void setkor(int kor) {
 		this.kor = kor;
+	}
+	public int getEng() {
+		return eng;
+	}
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+	public int getMath() {
+		return math;
+	}
+	public void setMath(int math) {
+		this.math = math;
+	}
+	public int getTot() {
+		return tot;
+	}
+	public void setTot(int tot) {
+		this.tot = tot;
+	}
+	public double getAvg() {
+		return avg;
+	}
+	public void setAvg(double avg) {
+		this.avg = avg;
+	}
+	public char getGrade() {
+		return grade;
+	}
+	public void setGrade(char grade) {
+		this.grade = grade;
+	}
+	public int getRank() {
+		return rank;
+	}
+	public void setRank(int rank) {
+		this.rank = rank;
 	}
 	
 	

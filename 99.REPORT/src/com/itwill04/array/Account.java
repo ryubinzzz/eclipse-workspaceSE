@@ -9,6 +9,8 @@ public class Account {
 	private String owner;//계좌주
 	private int balance;//잔고
 	private double iyul;//이율
+	
+	
 	/*
 	 * 행위(operation)
 	 *  - 멤버메쏘드
@@ -24,6 +26,7 @@ public class Account {
 		this.owner = owner;
 		this.balance = balance;
 		this.iyul = iyul;
+		
 	}
 	@Override
 	public String toString() {
@@ -53,6 +56,7 @@ public class Account {
 	 */
 	public void withdraw(int m) {
 		this.balance=this.balance-m;
+		
 	}
 	/*
 	 * header print
@@ -97,6 +101,8 @@ public class Account {
 	public void setIyul(double iyul) {
 		this.iyul = iyul;
 	}
+	
+	
 	
 	
 	

@@ -72,27 +72,19 @@ public class AccountArrayMain {
 		}
 		
 		System.out.println("9.계좌를 잔고순으로 오름(내림)차순정렬[Quiz]");
-		for (int i = 0; i < accounts.length-1; i++) {
-			for (int j = 0; j < accounts.length-1; j++) {
-				if(accounts[j].getBalance() > accounts[j+1].getBalance()) {
-					Account tempAccount = accounts[j];
-					accounts[j]=accounts[j+1];
-					accounts[j+1]=tempAccount;
-				}
-			}
-		}
-		System.out.println("10.6666계좌의 이율을 9.0로변경");
 		for (int i = 0; i < accounts.length; i++) {
-			if(accounts[i].getNo()==6666) {
-				accounts[i].setIyul(9.0);
-				accounts[i].print();
+			for (int j = 0; j < accounts.length; j++) {
+				
+					
+				
+				
 			}
 		}
+			
 		
-		Account.headerPrint();
-		for (int i = 0; i < accounts.length; i++) {
-			accounts[i].print();	
-		}
+		System.out.println("10.6666계좌의 이율을 9.0로변경");
+		
+		
 		
 	}
 
