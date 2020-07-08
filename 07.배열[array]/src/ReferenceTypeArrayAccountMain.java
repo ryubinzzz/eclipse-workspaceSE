@@ -56,6 +56,12 @@ public class ReferenceTypeArrayAccountMain {
 			}
 		}
 		System.out.println("8.9999번계좌 3000원 출금[Quiz]");
+		for (int i = 0; i < accounts.length; i++) {
+			if (accounts[i].getNo()==9999) {
+				accounts[i].print();
+				
+			}
+		}
 		System.out.println("9.계좌를 잔고순으로 오름(내림)차순으로 정렬");
 		
 		for (int i = 0; i < accounts.length-1; i++) {
