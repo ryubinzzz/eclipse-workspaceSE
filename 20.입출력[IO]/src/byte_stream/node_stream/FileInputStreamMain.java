@@ -13,20 +13,31 @@ import java.io.FileNotFoundException;
 public class FileInputStreamMain {
 
 	public static void main(String[] args) throws Exception {
-		
+		// TODO Auto-generated method stub
 		FileInputStream fis=new FileInputStream("fileOut.dat");
+		
+		/*
+		public abstract int read()
+                throws IOException
+			- Reads the next byte of data from the input stream.
+			- The value byte is returned as an int in the range 0 to 255.
+			- If no byte is available because the end of the stream has been reached,
+			  the value -1 is returned.
+			- This method blocks until input data is available, 
+			  the end of the straeam is detected, or an exception is thrown.
+		*/
 		int readByte = fis.read();
 		System.out.println("1.byte:"+Integer.toBinaryString(readByte));
 		readByte=fis.read();
 		System.out.println("2.byte:"+Integer.toBinaryString(readByte));
 		while (true) {
-			readByte = fis.read();
+			readByte=fis.read();
 			if(readByte==-1)break;
-			//System.out.println(readByte);
+			//System.out.print(readByte);
 			//System.out.print((char)readByte);
 			System.out.print(Integer.toBinaryString(readByte));
-			
 		}
+		
 		fis.close();
 	}
 

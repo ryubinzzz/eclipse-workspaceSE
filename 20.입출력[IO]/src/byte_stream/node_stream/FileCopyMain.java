@@ -10,8 +10,8 @@ public class FileCopyMain {
 		
 	
 		
-		FileInputStream fis=new FileInputStream("");
-		FileOutputStream fos=new FileOutputStream("");
+		FileInputStream fis=new FileInputStream("eclipse-inst-win64.exe");
+		FileOutputStream fos=new FileOutputStream("eclipse-inst-win64_copy.exe");
 		
 		int count=0;
 		while (true) {
@@ -20,7 +20,7 @@ public class FileCopyMain {
 			fos.write(readByte);
 			count++;
 			if(count%(1024*1024)==0) {
-				System.out.println("☆");
+				System.out.print("*");
 			}
 			
 		}
