@@ -49,10 +49,7 @@ public class ReferenceTypeArrayAccountMain {
 		System.out.println("7.6666번계좌 3000원입금");
 		for (int i = 0; i < accounts.length; i++) {
 			if(accounts[i].getNo()==6666) {
-				accounts[i].print();
-				accounts[i].deposit(3000);
-				accounts[i].print();
-				break;
+				
 			}
 		}
 		System.out.println("8.9999번계좌 3000원 출금[Quiz]");
