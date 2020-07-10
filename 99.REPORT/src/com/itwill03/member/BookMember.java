@@ -23,14 +23,14 @@ public class BookMember {
 			this.book = book;
 			
 		}
-		public void headerPrint() {
+		public void Print() {
 			System.out.println("------------책 대여 고객-------------");
 			System.out.println("번호\t이름\t전화번호\t책번호\t책이름\t책종류\t설명");
 			System.out.println("----------------------------------");
 		}
 		
 		public void print() {
-			System.out.print(this.no+"\t"+this.name+"\t"+this.call+"\t"+this.book);
+			System.out.println(this.no+"\t"+this.name+"\t"+this.call+"\t"+this.book);
 		
 		}
 

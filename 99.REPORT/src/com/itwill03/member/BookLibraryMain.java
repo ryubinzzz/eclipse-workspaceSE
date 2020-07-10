@@ -28,13 +28,17 @@ public class BookLibraryMain {
 		 * 
 		 * 책객체참조변수를 회원의 멤버변수에대입
 		 */
-		Book[] books = {book1, book2};
+		member1.setBook(book1);
+		member2.setBook(book2);
 		
 		
 		/*
 		 * 회원정보출력(회원정보와 회원이빌린들책정보출력)
 		 */
-
+		member1.print();
+		member2.print();
+		
+		
 	}
 
 }

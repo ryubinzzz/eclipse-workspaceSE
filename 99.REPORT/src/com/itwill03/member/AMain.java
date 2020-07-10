@@ -6,15 +6,17 @@ public class AMain {
 		
 			
 
-			A aa = new A();
-
-			aa.setX(111);
-			aa.setY(222);
-
-			aa.print();
-
-			aa.M1();
-			aa.M2("자바 공부중");
+		A a1=new A();
+		A a2=new A();
+		a1.no=1;
+		a1.name="류";
+		a2.no=2;
+		a2.name="빈";
+		
+		System.out.println(a1.no);
+		System.out.println(a1.name);
+		System.out.println(a2.no);
+		System.out.println(a2.name);
 
 	}
 
